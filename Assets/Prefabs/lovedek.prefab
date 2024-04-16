@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2211356867941828174}
   - component: {fileID: 3159086002761612693}
   - component: {fileID: -4366015007839114619}
-  - component: {fileID: 8649776262834272875}
   - component: {fileID: -5183765156984930445}
   - component: {fileID: 4170556284535092034}
   m_Layer: 0
@@ -100,85 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7d8204153b5084c85624b8e37c0689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
---- !u!60 &8649776262834272875
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3814203682391977329}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 10, y: 20}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.75, y: 0.5}
-    oldSize: {x: 1.024, y: 0.4}
-    newSize: {x: 1.024, y: 0.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.192, y: -0.080000006}
-      - {x: 0.208, y: -0.036000002}
-      - {x: 0.21200001, y: 0.004}
-      - {x: 0.21200001, y: 0.016}
-      - {x: 0.20400001, y: 0.052}
-      - {x: 0.18800001, y: 0.08800001}
-      - {x: 0.156, y: 0.120000005}
-      - {x: 0.108, y: 0.14400001}
-      - {x: 0.072000004, y: 0.15200001}
-      - {x: 0.024, y: 0.15200001}
-      - {x: -0.040000003, y: 0.14}
-      - {x: -0.072000004, y: 0.132}
-      - {x: -0.16000001, y: 0.1}
-      - {x: -0.23600002, y: 0.080000006}
-      - {x: -0.30800003, y: 0.052}
-      - {x: -0.356, y: 0.040000003}
-      - {x: -0.4, y: 0.032}
-      - {x: -0.55200005, y: 0.004}
-      - {x: -0.588, y: -0.004}
-      - {x: -0.596, y: -0.016}
-      - {x: -0.592, y: -0.028}
-      - {x: -0.55200005, y: -0.032}
-      - {x: -0.45200002, y: -0.044000003}
-      - {x: -0.388, y: -0.056}
-      - {x: -0.252, y: -0.080000006}
-      - {x: -0.15200001, y: -0.108}
-      - {x: -0.068, y: -0.136}
-      - {x: -0.008, y: -0.148}
-      - {x: 0.024, y: -0.15200001}
-      - {x: 0.080000006, y: -0.15200001}
-      - {x: 0.108, y: -0.14400001}
-      - {x: 0.136, y: -0.132}
-      - {x: 0.16000001, y: -0.116000004}
-  m_UseDelaunayMesh: 0
+  speed: 15
+  lifeTime: 4
+  damage: 10
 --- !u!58 &-5183765156984930445
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -208,7 +131,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

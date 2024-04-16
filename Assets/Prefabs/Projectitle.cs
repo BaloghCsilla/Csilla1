@@ -7,25 +7,27 @@ using UnityEngine;
 public class Projectitle : MonoBehaviour
 {
     [SerializeField] float speed = 10;
-    [SerializeField] float lifetime = 2;
-    [SerializeField] float damage = 10;
-
-    float time;
+    [SerializeField] float lifeTime = 2;
+    [SerializeField] int damage = 10;
 
     void Start()
     {
-        Destroy(gameObject, lifetime); 
+        Destroy(gameObject, lifeTime);
     }
 
     void Update()
     {
-        transform.position += transform.right * speed * Time.deltaTime;
-                           
+        transform.position += transform.right * Time.deltaTime * speed;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        HealtObject healthObject = other.GetComponent<HealtObject>();
+        if (healthObject != null)
+        {
+            healthObject.Damage(damage);
+            Destroy(gameObject);
+        }
     }
 
 }

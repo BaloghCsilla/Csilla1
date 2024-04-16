@@ -10,6 +10,8 @@ public class Spaceship : MonoBehaviour
     [SerializeField] float acceleration = 5;  // gyorsulás
     [SerializeField] float drag = 0.5f;
     Vector3 velocity;   // ha tehetetlenséget akarok, ak el kell tárolnom a vektort
+    
+
 
     void Update()
     {
