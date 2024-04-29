@@ -9,9 +9,11 @@ public class HealtObject : MonoBehaviour
     [SerializeField] int collisionDamage;
 
     int currentHp;
+    bool isSetup = false;
 
     public void Damage(int damage)
     {
+        if (!isSetup) return;
         damage = damage < 0 ? 0 : damage;   //egyik megoldás
 
         /* if (damage < 0)     //2. megoldás
@@ -39,6 +41,7 @@ public class HealtObject : MonoBehaviour
     void Start()
     {
         currentHp = startHp;
+        isSetup = true;
     }
 
 }

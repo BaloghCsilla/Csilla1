@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class Startasteroid : MonoBehaviour
+public class asteroid : MonoBehaviour
 {
     [SerializeField] float maxSpeed = 5;
     [SerializeField] float maxAngularSpeed =90;
@@ -11,7 +11,7 @@ public class Startasteroid : MonoBehaviour
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
 
-        rb.angularVelocity = Random.Range(-maxAngularSpeed, maxAngularSpeed);
+        rb.angularVelocity = Random.Range(-maxAngularSpeed, maxAngularSpeed); //itt sorsolom h melyik ketto kozott sorsol
 
         Vector2 v = Random.insideUnitCircle * maxSpeed;
        
@@ -19,8 +19,9 @@ public class Startasteroid : MonoBehaviour
     }
 
     
-    void Update()
+    void OnDestroy()
     {
-        
+        FindObjectOfType<asteroidSpawner>().Removeasteroid(this);
     }
 }
+
