@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5340917555190042550}
   - component: {fileID: 584966614885841899}
   - component: {fileID: 1808247670209709521}
-  - component: {fileID: -4600106776537174631}
   m_Layer: 0
   m_Name: asteroid_medium
   m_TagString: Untagged
@@ -116,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHp: 100
   collisionDamage: 1
+  spriteRenderer: {fileID: 6588857947866418725}
+  sprites: []
 --- !u!114 &5340917555190042550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,17 +203,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4600106776537174631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405464649780197734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3fdee62c5abe1f42a27651b6f8781fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnCount: 3
-  asteroidPrefabs: []

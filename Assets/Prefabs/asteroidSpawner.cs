@@ -1,5 +1,4 @@
-
-
+using System.Collections.Generic;
 using UnityEngine;
 
 public class asteroidSpawner : MonoBehaviour
@@ -9,7 +8,8 @@ public class asteroidSpawner : MonoBehaviour
     [SerializeField] asteroid[] asteroidPrefabs;  // azt tudjuk berakni, amin rajta van az asteroid script.
     [SerializeField]  float spawnDistance = 5;
 
-    list<asteroid> asteroids = new();  //amik a scene-ben léteznek aszteroidak, azokat tárolja
+    
+    List<asteroid> asteroids = new();  //amik a scene-ben léteznek aszteroidak, azokat tárolja
      void Start()
     {
         Spawn(); 
@@ -22,7 +22,7 @@ public class asteroidSpawner : MonoBehaviour
             int randomIndex = Random.Range(0, asteroidPrefabs.Length);    //kisorsolom
             asteroid prefab = asteroidPrefabs[randomIndex];   //kiveszem
             asteroid newAsteroid = Instantiate(prefab);  //másolatot hozok létre
-            asteroids.add(newAsteroid);
+            asteroids.Add(newAsteroid);
 
             Vector2 position = Random.insideUnitCircle;
             position.Normalize();

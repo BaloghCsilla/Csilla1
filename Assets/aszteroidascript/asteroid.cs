@@ -23,5 +23,8 @@ public class asteroid : MonoBehaviour
     {
         FindObjectOfType<asteroidSpawner>().Removeasteroid(this);
     }
+
+    
 }
+
 

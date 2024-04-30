@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 6707285669549446644}
   - component: {fileID: -2218503864543356275}
   - component: {fileID: -1540438012663134175}
-  - component: {fileID: 4909067242809367357}
   m_Layer: 0
   m_Name: Asteroid_big
   m_TagString: Untagged
@@ -116,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHp: 50
   collisionDamage: 3
+  spriteRenderer: {fileID: 7697266377854736787}
+  sprites: []
 --- !u!114 &6707285669549446644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,17 +203,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4909067242809367357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6291516727698259393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3fdee62c5abe1f42a27651b6f8781fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnCount: 3
-  asteroidPrefabs: []

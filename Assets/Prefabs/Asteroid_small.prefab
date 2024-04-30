@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 6298155950694922385}
   - component: {fileID: 6224889326305657973}
   - component: {fileID: 8018337683146165418}
-  - component: {fileID: 5683895436498568980}
   m_Layer: 0
   m_Name: Asteroid_small
   m_TagString: Untagged
@@ -107,6 +106,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHp: 1000
   collisionDamage: 2
+  spriteRenderer: {fileID: 4051731774200872935}
+  sprites: []
 --- !u!60 &2878354745224897469
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -281,6 +282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHp: 0
   collisionDamage: 0
+  spriteRenderer: {fileID: 4051731774200872935}
+  sprites: []
 --- !u!114 &8018337683146165418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,17 +298,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   maxAngularSpeed: 90
---- !u!114 &5683895436498568980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2743819387952596907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3fdee62c5abe1f42a27651b6f8781fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnCount: 3
-  asteroidPrefabs: []

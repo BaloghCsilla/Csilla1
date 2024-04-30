@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 1155654533193093645}
   - component: {fileID: 5457007015835666318}
   - component: {fileID: 3912057428694654079}
-  - component: {fileID: -7943015872506912507}
   m_Layer: 0
   m_Name: Asteroid_apro
   m_TagString: Untagged
@@ -259,7 +258,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627123634142657728}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33474a7d49a395c4fa919c08c5a45b95, type: 3}
   m_Name: 
@@ -290,6 +289,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHp: 66
   collisionDamage: 6
+  spriteRenderer: {fileID: 7012480787324020681}
+  sprites:
+  - {fileID: 21300000, guid: 3a5da0e3282acbb4382f7cc6702d633b, type: 3}
+  - {fileID: 21300002, guid: 3a5da0e3282acbb4382f7cc6702d633b, type: 3}
+  - {fileID: 21300004, guid: 3a5da0e3282acbb4382f7cc6702d633b, type: 3}
+  - {fileID: 21300006, guid: 3a5da0e3282acbb4382f7cc6702d633b, type: 3}
 --- !u!114 &3912057428694654079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,17 +309,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   maxAngularSpeed: 90
---- !u!114 &-7943015872506912507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627123634142657728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3fdee62c5abe1f42a27651b6f8781fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnCount: 3
-  asteroidPrefabs: []
